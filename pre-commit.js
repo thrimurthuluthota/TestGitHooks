@@ -13,7 +13,7 @@ var found = importantFile.some(function(s) {
 
 console.log('found ' + found);
 if(found) {
-  echo("  Error: Please do not commit these files")
+  echo("  Error: Please do not commit these files ");
   echo("  1) package.json");
   echo("  2) bower.json");
   echo("  ");
