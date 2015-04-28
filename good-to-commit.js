@@ -1,6 +1,8 @@
 require('shelljs/global');
-console.log('good to commit ' );
+console.log('good to commit');
 var outputStr = exec('git diff --cached --name-only', {silent:true}).output.trim();
+
+console.log('importFile ' + outputStr);
 var modifiedFiles = outputStr.split(/\n/);
 
 var importantFile = ['package.json','bower.json'];
